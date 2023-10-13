@@ -22,10 +22,13 @@ public class RasterizationController {
 
         Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 700, 500, 5, 2, Color.BLACK);
         Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 600, 200, 300, 50, Color.RED);
-        Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 500, 100, 30, 50, Color.BLUE);
+        Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 500, 100, 300, 50, Color.BLUE);
+
         Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 0, 0, 200, 200, Color.GRAY);
         Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 400, 300, -100, -50, Color.GREEN);
 
+        Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 300, 10, 100, 100, Color.PINK);
+        Rasterization.drawEllipse(canvas.getGraphicsContext2D(), 400, 300, 70, 300, Color.YELLOW);
     }
 
 }
