@@ -19,6 +19,9 @@ public class RasterizationApplication extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        Color clr = Color.rgb(2, 2, 2);
+
+        //launch();
+        System.out.println(0.1 + 0.2 == 0.3);
     }
 }

@@ -48,20 +48,20 @@ public class Rasterization {
         double myBlueRGB = blueRGB;
         // Проверяем, в каком канале цвета мы находимся
         for (int i = 0; i <= way; i++) {
-            if (equels(maxRGB, myRedRGB) && !equels(maxRGB, myGreenRGB)) {
-                if (!equels(minRGB, myBlueRGB)) {
+            if (equals(maxRGB, myRedRGB) && !equals(maxRGB, myGreenRGB)) {
+                if (!equals(minRGB, myBlueRGB)) {
                     myBlueRGB--;
                 } else {
                     myGreenRGB++;
                 }
-            } else if (equels(maxRGB, myGreenRGB) && !equels(maxRGB, myBlueRGB)) {
-                if (!equels(minRGB, myRedRGB)) {
+            } else if (equals(maxRGB, myGreenRGB) && !equals(maxRGB, myBlueRGB)) {
+                if (!equals(minRGB, myRedRGB)) {
                     myRedRGB--;
                 } else {
                     myBlueRGB++;
                 }
-            } else if (equels(maxRGB, myBlueRGB) && !equels(maxRGB, myRedRGB)) {
-                if (!equels(minRGB, myGreenRGB)) {
+            } else if (equals(maxRGB, myBlueRGB) && !equals(maxRGB, myRedRGB)) {
+                if (!equals(minRGB, myGreenRGB)) {
                     myGreenRGB--;
                 } else {
                     myRedRGB++;
@@ -72,7 +72,7 @@ public class Rasterization {
     }
 
     // Метод для проверки вещественных чисел
-    private static boolean equels(Double a, Double b) {
+    private static boolean equals(Double a, Double b) {
         double EPS = 1/(10e3);
         if (Math.abs(a - b) < EPS) {
             return true;
